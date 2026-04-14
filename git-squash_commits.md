@@ -1,15 +1,12 @@
 # Squashing Commits
 
-Squashing commits with `git rebase` allows you to combine multiple small commits into a single, 
-clean commit to maintain a linear and readable project history.
+Squashing commits with `git rebase` allows you to combine multiple small commits into a single, clean commit to maintain a linear and readable project history.
 
 ## Step-by-Step Guide to Squashing
 
-1. **Identify the Commits:** Determine how many commits you want to combine. Run `git log --oneline`
-to see your recent history.
+1. **Identify the Commits:** Determine how many commits you want to combine. Run `git log --oneline` to see your recent history.
 
-2. **Start Interactive Rebase:** Run the following command, replacing `n` with the number of commits
-to squash:
+2. **Start Interactive Rebase:** Run the following command, replacing `n` with the number of commits to squash:
 
     ```bash
     git rebase -i HEAD~n
@@ -23,8 +20,7 @@ to squash:
     2. Change `pick` to `squash` (or just `s`) for all subsequent commits you want to merge into the first one.
     3. *Tip*: Use `fixup` (of `f`) instead of `squash` if you want to discard that commit's message entirely.
 
-4. **Finalize the Commit Message:** After saving and closing the first editor, a second window will open.
-Combine or rewrite the commit messages into one concise summary.
+4. **Finalize the Commit Message:** After saving and closing the first editor, a second window will open. Combine or rewrite the commit messages into one concise summary.
 
 5. **Push Changes:** Since you have rewritten history, you must use a force push to update the remote branch:
 
@@ -35,12 +31,9 @@ Combine or rewrite the commit messages into one concise summary.
 
 ## Best Practices
 
-- **Never rebase shared branches:** Only squash commits on your local, private feature branch before merging into
-  a main or shared branch to avoid disrupting collaborators.
-- **Backup**: Create a temporary backup branch (`git branch backup-branch`) before starting a complex rebase in
-  case you need to revert.
-- **Auto-Squashing:** For frequent "fixup" commits, use `git commit --fixup <hash>` and then `git rebase-i --autosquash`
-  to automate selection process. 
+- **Never rebase shared branches:** Only squash commits on your local, private feature branch before merging into a main or shared branch to avoid disrupting collaborators.
+- **Backup**: Create a temporary backup branch (`git branch backup-branch`) before starting a complex rebase in case you need to revert.
+- **Auto-Squashing:** For frequent "fixup" commits, use `git commit --fixup <hash>` and then `git rebase-i --autosquash` to automate selection process. 
 
 Made by Gemini, Edited by Me
 
