@@ -31,4 +31,4 @@ To add a new worktree, use the `git worktree add` command. This creates a new di
 - **Directory Placement:** It is often best to create worktrees one level *above* your current directory (using: `../`) to avoid nesting them inside your main project folder.
 - **Bare Repositories:** Advanced users often clone a repository as "bare" (`git clone --bare`) and then use worktrees for all active development to keep the main directory organized.
 
-Made by Gemini
+Made by Gemini, Edited by Me
