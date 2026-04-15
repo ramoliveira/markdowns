@@ -31,3 +31,5 @@ git branch -m <new-name>
 git push origin -u <new-name>
 git push origin --delete <old-name>
 ```
+
+Made by Gemini, Edited by Me
