@@ -11,6 +11,9 @@ To add a new worktree, use the `git worktree add` command. This creates a new di
 - ### Check out an existing branch in a new directory:
   `git worktree add <path> <existing-branch-name>`
   *Example:* `git worktree add ../app-feature-x feature/x`
+- ### Creating a new branch from a base branch:
+  `git worktree add <path> -b <new-branch-name> <base-branch>`.
+  *Example:* `git worktree add ../hotfix -b hotfix/bug-001 release/1.0.0`
 
 ## 2. Managing Worktrees
 
