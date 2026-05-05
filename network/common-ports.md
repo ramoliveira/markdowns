@@ -249,7 +249,7 @@ Devices can send messages when things don't go well
 * *"Your time-to-live expired, just letting you know"*
 
 > [!HINT]
-> O comando `ping` utiliza o protocolo ICMP.
+> `ping` command uses ICMP protocol.
 
 ## GRE - Generic Routing Encapsulation
 
@@ -259,7 +259,7 @@ Encapsulate traffic inside of IP
 * Two endpoints appear to be directly connected to each other
 * No built-in encryption
 
-### VPN - Virtual Private Network
+## VPN - Virtual Private Network
 
 Encrypted (private) data traversing a public network
 
@@ -278,7 +278,7 @@ Encrypted (private) data traversing a public network
 Firewalls often act as VPN concentrators
 * Problably already have firewalls in place
 
-### IPSec - Internet Protocol Security
+## IPSec - Internet Protocol Security
 
 Security for OSI Layer 3
 * Authentication and encryption for every packet
