@@ -1,6 +1,6 @@
 # OSI
 
-|Osi Model Layers|
+|OSI Model Layers|
 |:-:|
 |Application|
 |Presentation|
