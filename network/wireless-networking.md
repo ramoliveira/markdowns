@@ -1,9 +1,9 @@
 # Wireless Networking
 
-## Wireless Standards
+## IEEE Wireless Standards
 
 Is a standard maintained by the Institute of Electrical and Electronics Engineers (IEEE)
-*802.11*: Standard related to wireless networks
+*802.11*: Committee related to wireless networks
 
 ### Major Wi-Fi Standards
 
